@@ -1,1 +1,15 @@
 <!-- About Page -->
+{% extends 'robotronics/base.html' %}
+
+{% block navbar %}
+  <li><a href="{% url 'index' %}" class="scroll">Home</a></li>
+  <li class="active"><a href="{% url 'about' %}">About Us</a></li>
+  <li><a href="{% url 'project' %}">Projects</a></li>
+  <li><a href="{% url 'tutorial' %}">Tutorials</a></li>
+  <li><a href="{% url 'team' %}">Team</a></li>
+  <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
