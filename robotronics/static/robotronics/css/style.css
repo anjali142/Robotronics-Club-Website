@@ -61,7 +61,7 @@ display:none;
 }
 .top-nav ul li a{
 color: #FFF;
-padding: 1em 1.8em;
+padding: 1em 2em;
 font-size: 1em;
 font-weight: 400;
 text-align: center;
@@ -450,6 +450,10 @@ vertical-align:middle;
 .footer-grid ul li a.googlepluse span{
 background:url(../images/splits.png) no-repeat -118px -12px;
 vertical-align:middle;
+}
+.footer-bottom {
+padding: 20px;
+background:#2f3837;
 }
 ul.social-icons li a{
 padding:0.5em 0;
@@ -1177,7 +1181,7 @@ width: 75%;
 height: 55px;
 }
 .top-nav ul li a {
-padding: 0.5em 1.4em;
+padding: 0.5em 2em;
 font-size: 0.9em;
 }
 .banner h1 {
@@ -1203,7 +1207,7 @@ height: 150px;
 }
 @media(max-width:1024px){
 .top-nav ul li a {
-padding: 0.5em 0.6em;
+padding: 0.5em 1.2em;
 font-size: 0.8em;
 }
 .banner h1 {
@@ -1300,7 +1304,7 @@ background-size: 100%;
 width: 60%;
 }
 .top-nav ul li a {
-padding: 0.5em 0.3em;
+padding: 0.5em 0.55em;
 font-size: 0.8em;
 }
 .banner h1 {
