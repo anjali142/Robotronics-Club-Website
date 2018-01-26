@@ -61,7 +61,7 @@ display:none;
 }
 .top-nav ul li a{
 color: #FFF;
-padding: 1em 2em;
+padding: 1em 1.8em;
 font-size: 1em;
 font-weight: 400;
 text-align: center;
@@ -1177,7 +1177,7 @@ width: 75%;
 height: 55px;
 }
 .top-nav ul li a {
-padding: 0.5em 2em;
+padding: 0.5em 1.4em;
 font-size: 0.9em;
 }
 .banner h1 {
@@ -1203,7 +1203,7 @@ height: 150px;
 }
 @media(max-width:1024px){
 .top-nav ul li a {
-padding: 0.5em 1.2em;
+padding: 0.5em 0.6em;
 font-size: 0.8em;
 }
 .banner h1 {
@@ -1300,7 +1300,7 @@ background-size: 100%;
 width: 60%;
 }
 .top-nav ul li a {
-padding: 0.5em 0.55em;
+padding: 0.5em 0.3em;
 font-size: 0.8em;
 }
 .banner h1 {

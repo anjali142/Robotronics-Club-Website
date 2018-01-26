@@ -11,5 +11,44 @@
 {% endblock %}
 
 {% block content %}
-
+  <div class="container">
+    <h1>Faculty</h1>
+    <div class="row">
+    {% for memfaculty in faculty %}
+      <div class="col-lg-15 col-md-6 col-sm-12">
+        <h3>{{memfaculty.name}}</h3>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+  <div class="container">
+    <h1>Coordinators</h1>
+    <div class="row">
+    {% for memcoord in coord %}
+      <div class="col-lg-15 col-md-6 col-sm-12">
+        <h3>{{memcoord.name}}</h3>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="container">
+    <h1>Team</h1>
+    <div class="row">
+    {% for memteam in team %}
+      <div class="col-lg-15 col-md-6 col-sm-12">
+        <h3>{{memteam.name}}</h3>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+  <div class="container">
+    <h1>Web Developers</h1>
+    <div class="row">
+    {% for memwebdev in webdev %}
+      <div class="col-lg-15 col-md-6 col-sm-12">
+        <h3>{{memwebdev.name}}</h3>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
 {% endblock %}
