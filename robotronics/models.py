@@ -1,11 +1,11 @@
 from django.db import models
 
 class Member(models.Model):
-    Faculty = 'Faculty'
+    Coord16 = 'Coord16'
     Coord = 'Coord'
     Team = 'Team'
-    WebDev = 'WebDev'
-    CHOICES = ((Faculty, 'Faculty'), (Coord, 'Coord'), (Team, 'Team'), (WebDev, 'WebDev'))
+    Team16 = 'Team16'
+    CHOICES = ((Coord16, 'Coord16'), (Coord, 'Coord'), (Team, 'Team'), (Team16, 'Team16'))
     role = models.CharField(max_length=20, choices=CHOICES, default=Team)
     name = models.CharField(max_length=200)
     facebook = models.CharField(max_length=500, null=True)

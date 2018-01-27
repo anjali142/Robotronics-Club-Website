@@ -9,15 +9,15 @@ def about(request):
     return render(request, 'robotronics/about.html')
 
 def team(request):
-    faculty = Member.objects.filter(role='Faculty')
+    coord16 = Member.objects.filter(role='Coord16')
     coord = Member.objects.filter(role='Coord')
     team = Member.objects.filter(role='Team')
-    webdev = Member.objects.filter(role='WebDev'),
+    team16 = Member.objects.filter(role='Team16'),
     return render(request, 'robotronics/team.html', {
-        'faculty': faculty,
+        'coord16': coord16,
         'coord': coord,
         'team': team,
-        'webdev': webdev,
+        'team16': team16,
     })
 
 def contacts(request):
