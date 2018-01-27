@@ -61,7 +61,7 @@ display:none;
 }
 .top-nav ul li a{
 color: #FFF;
-padding: 1em 2em;
+padding: 1em 1.8em;
 font-size: 1em;
 font-weight: 400;
 text-align: center;
@@ -1207,7 +1207,7 @@ height: 150px;
 }
 @media(max-width:1024px){
 .top-nav ul li a {
-padding: 0.5em 1.2em;
+padding: 0.5em 0.95em;
 font-size: 0.8em;
 }
 .banner h1 {
@@ -1304,7 +1304,7 @@ background-size: 100%;
 width: 60%;
 }
 .top-nav ul li a {
-padding: 0.5em 0.55em;
+padding: 0.5em 0.45em;
 font-size: 0.8em;
 }
 .banner h1 {
