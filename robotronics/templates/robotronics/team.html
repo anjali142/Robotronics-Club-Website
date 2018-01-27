@@ -7,7 +7,7 @@
   <li><a href="{% url 'project' %}">Projects</a></li>
   <li><a href="{% url 'tutorial' %}">Tutorials</a></li>
   <li class="active"><a href="{% url 'team' %}">Team</a></li>
-  <li><a href="http://sntc.iitmandi.ac.in:13000/">Resources</a></li>
+  <li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
   <li><a href="{% url 'contacts' %}">Contact Us</a></li>
 {% endblock %}
 
@@ -31,8 +31,8 @@
                     <p>{{mem.details}}</p>
                   </div>
                   <div class="s-link">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-envelope"></i></a>
+                    <a href="{{mem.facebook}}"><i class="fa fa-facebook"></i></a>
+                    <a href="{{mem.email}}"><i class="fa fa-envelope"></i></a>
                   </div>
                 </div>
               </div>
@@ -68,8 +68,8 @@
                     <p>{{mem.details}}</p>
                   </div>
                   <div class="s-link">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-envelope"></i></a>
+                    <a href="{{mem.facebook}}"><i class="fa fa-facebook"></i></a>
+                    <a href="{{mem.email}}"><i class="fa fa-envelope"></i></a>
                   </div>
                 </div>
               </div>
@@ -105,8 +105,8 @@
                     <p>{{mem.details}}</p>
                   </div>
                   <div class="s-link">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-envelope"></i></a>
+                    <a href="{{mem.facebook}}"><i class="fa fa-facebook"></i></a>
+                    <a href="{{mem.email}}"><i class="fa fa-envelope"></i></a>
                   </div>
                 </div>
               </div>
@@ -142,8 +142,8 @@
                     <p>{{mem.details}}</p>
                   </div>
                   <div class="s-link">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-envelope"></i></a>
+                    <a href="{{mem.facebook}}"><i class="fa fa-facebook"></i></a>
+                    <a href="{{mem.email}}"><i class="fa fa-envelope"></i></a>
                   </div>
                 </div>
               </div>
