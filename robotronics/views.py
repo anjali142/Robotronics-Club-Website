@@ -12,7 +12,7 @@ def team(request):
     coord16 = Member.objects.filter(role='Coord16')
     coord = Member.objects.filter(role='Coord')
     team = Member.objects.filter(role='Team')
-    team16 = Member.objects.filter(role='Team16'),
+    team16 = Member.objects.filter(role='Team16')
     return render(request, 'robotronics/team.html', {
         'coord16': coord16,
         'coord': coord,
