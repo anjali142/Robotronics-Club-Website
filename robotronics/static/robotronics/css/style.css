@@ -1176,7 +1176,6 @@ min-height: 435px;
 }
 .logo a img {
 background-size: 100%;
-width: 75%;
 }
 .header {
 height: 55px;
@@ -1208,7 +1207,7 @@ height: 150px;
 }
 @media(max-width:1024px){
 .top-nav ul li a {
-padding: 0.5em 0.95em;
+padding: 0.5em 0.85em;
 font-size: 0.8em;
 }
 .banner h1 {
@@ -1302,10 +1301,9 @@ margin: 3px 0px 4px 0;
 @media (max-width: 768px){
 .logo a img {
 background-size: 100%;
-width: 60%;
 }
 .top-nav ul li a {
-padding: 0.5em 0.45em;
+padding: 0.5em 0.35em;
 font-size: 0.8em;
 }
 .banner h1 {
