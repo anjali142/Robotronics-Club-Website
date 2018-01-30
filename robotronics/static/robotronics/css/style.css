@@ -115,6 +115,7 @@ color:#00A2C1;
 position: absolute;
 top: 50%;
 margin-top: -90px;
+right: 5%;
 }
 .banner h1{
 font-weight: 700;
@@ -1309,7 +1310,7 @@ font-size: 0.8em;
 }
 .banner h1 {
 font-size: 2em;
-width: 53%;
+width: 73%;
 }
 .banner p {
 font-size: 0.9em;
@@ -1549,7 +1550,7 @@ height: 50px;
 }
 .banner h1 {
 font-size: 1.8em;
-width: 68%;
+width: 73%;
 }
 .banner {
 padding: 3em 0 0;
