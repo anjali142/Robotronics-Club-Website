@@ -34,7 +34,7 @@
 		<!--//webfonts -->
 	</head>
 	<body>
-		<div class="bg">
+		<div class="bgbase">
 			<div class="bg-tint">
 
 				<!-- start-header -->
@@ -69,10 +69,12 @@
 				<!-- banner -->
 				<div class="banner text-right">
 					<div class="container">
+						{% block banner %}
 						<h1>ROBOTRONICS CLUB<br>IIT MANDI</h1>
 						<div class="clearfix"></div>
 						<p>Robotics + Electronics club of<br>Indian Institute of Technology, Mandi</p>
 						<div class="clearfix"> </div>
+						{% endblock %}
 					</div>
 				</div>
 
