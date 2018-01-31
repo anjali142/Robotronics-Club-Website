@@ -46,21 +46,15 @@ def tut(request, tutorial_id):
     nextp = Tutorial.objects.filter(id__gt=tutorial_id).first()
     return render(request, 'robotronics/postT.html', {'tut': tut, 'previousp': previousp, 'nextp': nextp})
 
-def emailView(request):
-    if request.method == 'GET':
-        form = forms.ContactForm()
+def send_mail(request):
+    subject = request.POST.get('subject', '')
+    message = request.POST.get('message', '')
+    from_email = request.POST.get('from_email', '')
+    if subject and message and from_email:
+        try:
+            send_mail(subject, message, from_email, ['varunjustrocks@gmail.com'])
+        except BadHeaderError:
+            return HttpResponse('Invalid header found.')
+        return HttpResponseRedirect('/contact/thanks/')
     else:
-        form = forms.ContactForm(request.POST)
-        if form.is_valid():
-            subject = form.cleaned_data['subject']
-            from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message']
-            try:
-                send_mail(subject, message, from_email, ['admin@example.com'])
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
-            return redirect('success')
-    return render(request, "robotronics/contacts.html", {'form': form})
-
-def successView(request):
-    return HttpResponse('Success! Thank you for your message.')
+        return HttpResponse('Make sure all fields are entered and valid.')
