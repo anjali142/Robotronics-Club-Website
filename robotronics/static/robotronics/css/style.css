@@ -462,6 +462,7 @@ vertical-align:middle;
 .footer-bottom {
 padding: 20px;
 background:#2f3837;
+font-size: 0.875em;
 }
 ul.social-icons li a{
 padding:0.5em 0;
@@ -1501,6 +1502,9 @@ float: left;
 width: 11%;
 margin-right: 0.7em;
 }
+.footer-bottom {
+font-size: 0.875em;
+}
 }
 @media (max-width: 680px){
 .logo {
@@ -1652,7 +1656,7 @@ background:url(../images/splits.png) no-repeat -101px -37px;
 background-size: 527%;
 }
 .ftr {
-display: none;
+//display: none;
 }
 .ftr-sec {
 width: 31%;
@@ -1785,6 +1789,9 @@ font-size: 1.5em;
 padding: 6px;
 width:100%;
 }
+.footer-bottom {
+font-size: 0.70em;
+}
 }
 @media (max-width: 480px){
 .logo {
@@ -1877,6 +1884,10 @@ width: 49%;
 }
 .footer-grid ul {
 margin: 1em 0 0 0;
+}
+.footer-bottom {
+padding: 18px;
+font-size: 0.65em;
 }
 .service-banner h2, .contact-banner h2 {
 font-size: 1.5em;
@@ -2049,6 +2060,10 @@ font-size: 1em;
 }
 .footer-grid ul li a {
 font-size: 0.75em;
+}
+.footer-bottom {
+padding: 10px;
+font-size: 0.65em;
 }
 p.copy-right {
 font-size: 0.8em;
