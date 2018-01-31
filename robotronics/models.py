@@ -1,4 +1,5 @@
 from django.db import models
+import datetime
 
 class Member(models.Model):
     Coord16 = 'Coord16'
@@ -17,8 +18,19 @@ class Member(models.Model):
 
 class Project(models.Model):
     Title = models.CharField(max_length=200)
-    details = models.TextField()
+    text = models.TextField()
+    date = models.DateField(default=datetime.date.today)
+
+    def __str__(self):
+        return self.Title
+
+    def desc(self):
+        return self.text[:20]
 
 class Tutorial(models.Model):
     Title = models.CharField(max_length=200)
-    details = models.TextField()
+    text = models.TextField()
+    date = models.DateField(default=datetime.date.today)
+
+    def __str__(self):
+        return self.Title
