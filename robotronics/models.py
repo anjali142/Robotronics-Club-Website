@@ -25,7 +25,7 @@ class Project(models.Model):
         return self.Title
 
     def desc(self):
-        return self.text[:20]
+        return self.text[:75]
 
 class Tutorial(models.Model):
     Title = models.CharField(max_length=200)
