@@ -22,37 +22,35 @@
           <div class="col-md-6">
               <div class="well well-sm">
                   <form class="form-horizontal" method="post">
+                    {% csrf_token %}
                       <fieldset>
                           <legend class="text-center headera">Contact us</legend>
+                          <input type='hidden' name='csrfmiddlewaretoken' value='qo7B5CrDozfrep9ZORhsFRN3Y780KZ1BwBzrV0WndHK7DWbBnlDLAJDkcFCThvyG'/>
                           <div class="form-group">
                               <div class="col-md-10 col-md-offset-1">
-                                  <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                                  <input type="text" name="first" id="id_first" placeholder="First Name" class="form-control" required/>
                               </div>
                           </div>
                           <div class="form-group">
                               <div class="col-md-10 col-md-offset-1">
-                                  <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                                  <input type="text" name="last" id="id_last" placeholder="Last Name" class="form-control" required/>
                               </div>
                           </div>
-
                           <div class="form-group">
                               <div class="col-md-10 col-md-offset-1">
-                                  <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                                  <input id="id_from_email" name="from_email" type="email" placeholder="Email" class="form-control" required/>
                               </div>
                           </div>
-
                           <div class="form-group">
                               <div class="col-md-10 col-md-offset-1">
-                                  <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                                  <input type="text" name="phone" id="id_phone" placeholder="Phone" class="form-control" required/>
                               </div>
                           </div>
-
                           <div class="form-group">
                               <div class="col-md-10 col-md-offset-1">
-                                  <textarea class="form-control" id="message" name="message" placeholder="Enter your message for us here." rows="7"></textarea>
+                                  <textarea name="message" id="id_message" required cols="40" rows="10" placeholder="Message" class="form-control"></textarea>
                               </div>
                           </div>
-
                           <div class="form-group">
                               <div class="col-md-12 text-center">
                                   <button type="submit" class="btn btn-primary btn-lg">Submit</button>

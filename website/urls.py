@@ -19,4 +19,5 @@ from django.urls import include, path
 urlpatterns = [
     path('', include('robotronics.urls')),
     path('admin/', admin.site.urls),
+    path('contacts/', include('sendemail.urls')),
 ]

@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from django.core.mail import send_mail, BadHeaderError
 from django.shortcuts import render, redirect
 
-from . import forms
 from .models import Member, Project, Tutorial
 
 def index(request):
@@ -22,9 +21,6 @@ def team(request):
         'team': team,
         'team16': team16,
     })
-
-def contacts(request):
-    return render(request, 'robotronics/contacts.html')
 
 def tutorial(request):
     list_tutorials = Tutorial.objects.all()
