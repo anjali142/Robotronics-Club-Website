@@ -1,5 +1,8 @@
 from django.shortcuts import render, get_object_or_404
+from django.core.mail import send_mail, BadHeaderError
+from django.shortcuts import render, redirect
 
+from . import forms
 from .models import Member, Project, Tutorial
 
 def index(request):
@@ -42,3 +45,22 @@ def tut(request, tutorial_id):
     previousp = Tutorial.objects.filter(id__lt=tutorial_id).last()
     nextp = Tutorial.objects.filter(id__gt=tutorial_id).first()
     return render(request, 'robotronics/postT.html', {'tut': tut, 'previousp': previousp, 'nextp': nextp})
+
+def emailView(request):
+    if request.method == 'GET':
+        form = forms.ContactForm()
+    else:
+        form = forms.ContactForm(request.POST)
+        if form.is_valid():
+            subject = form.cleaned_data['subject']
+            from_email = form.cleaned_data['from_email']
+            message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['admin@example.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('success')
+    return render(request, "robotronics/contacts.html", {'form': form})
+
+def successView(request):
+    return HttpResponse('Success! Thank you for your message.')
