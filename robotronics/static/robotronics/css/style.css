@@ -2608,3 +2608,16 @@ width: 69%;
   display: -webkit-flex;
   flex-wrap: wrap;
 }
+
+.jumbotron h2{
+  text-align: center;
+  font-size: 50px;
+}
+
+.text {
+  margin-bottom: 5em;
+}
+
+.contactrow {
+  margin: 3em 0em;
+}
