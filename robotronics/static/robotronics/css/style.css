@@ -414,7 +414,7 @@ background: url(../images/search1.png) no-repeat 0px 0px;
 /*---- footer -----*/
 .footer{
 background:#2f3837;
-padding:3em 0 2em 0;
+padding:3em 0 0 0;
 border-top: 2px solid #4059ce;
 }
 .footer-grid h3{
@@ -1405,7 +1405,7 @@ background: url(../images/splits.png) no-repeat -130px -45px;
 background-size: 651%;
 }
 .footer {
-padding: 2em 0;
+padding: 2em 0 0;
 }
 .ftr-sec{
 float:left;
@@ -2047,7 +2047,7 @@ font-size: 0.8em;
 margin-top: 2px;
 }
 .footer {
-padding: 1.5em 0;
+padding: 1.5em 0 0;
 }
 .ftr-sec {
 padding: 0;
@@ -2650,4 +2650,52 @@ width: 69%;
     height: 70px;
     font-size: 27px;
     padding: 10px;
+}
+
+.social-icons {
+  *display: inline;
+  color: #999;
+  text-align: center;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.social-icons h1 {
+  margin: 40px 0;
+}
+
+.social-icons ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+	zoom: 1;
+	*display: inline;
+	vertical-align:  middle;
+}
+
+.social-icons a {
+	display: block;
+	font-size: 1.4em;
+	margin: 0 5px;
+	text-decoration: none;
+  color: #999;
+}
+
+.social-icons a:hover {
+  color: #4059ce;
+}
+
+.social-icons a:focus {
+	transition: none;
+  color: #4059ce;
+}
+
+.social-icons a:active {
+	transition: none;
+  color: #4059ce;
 }
