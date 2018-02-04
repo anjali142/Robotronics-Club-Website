@@ -1,6 +1,5 @@
-<!-- About Page -->
+<!-- Tutorials Page -->
 {% extends 'robotronics/base.html' %}
-
 {% block navbar %}
   <li><a href="{% url 'index' %}" class="scroll">Home</a></li>
   <li><a href="{% url 'about' %}">About Us</a></li>
@@ -12,13 +11,17 @@
 {% endblock %}
 
 {% block banner %}
-  <h1>ROBOTRONICS CLUB<br>TUTORIALS</h1>
+  <h1>ROBOTRONICS CLUB</h1>
   <div class="clearfix"></div>
 {% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Tutorials</h2>
+    </div>
+    
+    <div class="row">
       <!-- Blog Post -->
       {% for tut in list_tutorials %}
         <div class="col-md-4 col-sm-4">
@@ -34,6 +37,6 @@
           </div>
         </div>
       {% endfor %}
+    </div>
   </div>
-</div>
 {% endblock %}
