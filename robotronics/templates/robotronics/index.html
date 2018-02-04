@@ -1,62 +1,62 @@
 <!-- Home Page -->
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
-
-<head>
-	<title>Robotronics Club - IIT Mandi</title>
-	<link href="{% static 'robotronics/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="{% static 'robotronics/js/jquery.min.js' %}"></script>
-	<!-- Custom Theme files -->
-	<!-- animated-css -->
-	<link href="{% static 'robotronics/css/animate.css' %}" rel="stylesheet" type="text/css" media="all">
-	<script src="{% static 'robotronics/js/fontawesome-all.min.js' %}"></script>
-	<script src="{% static 'robotronics/js/wow.min.js' %}"></script>
-	<script>
-		new WOW().init();
-	</script>
-	<!-- animated-css -->
-	<link href="{% static 'robotronics/css/style.css' %}" rel='stylesheet' type='text/css' />
-	<!-- Custom Theme files -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="application/x-javascript">
-		addEventListener("load", function() {
-			setTimeout(hideURLbar, 0);
-		}, false);
-
-		function hideURLbar() {
-			window.scrollTo(0, 1);
-		}
-	</script>
-	</script>
-	<!-- webfonts -->
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-	<link rel="icon" type="image/x-icon" href="{% static 'robotronics/robofav.ico' %}">
-	<!--//webfonts -->
-</head>
-
-<body>
-	<div class="bg">
-		<div class="bg-tint">
+	{% load static %}
+	<head>
+		<title>Robotronics Club - IIT Mandi</title>
+		<link href="{% static 'robotronics/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="{% static 'robotronics/js/jquery.min.js' %}"></script>
+		<!-- Custom Theme files -->
+		<!-- animated-css -->
+		<link href="{% static 'robotronics/css/animate.css' %}" rel="stylesheet" type="text/css" media="all">
+		<script src="{% static 'robotronics/js/fontawesome-all.min.js' %}"></script>
+		<script src="{% static 'robotronics/js/wow.min.js' %}"></script>
+		<script>
+			new WOW().init();
+		</script>
+		<!-- animated-css -->
+		<link href="{% static 'robotronics/css/style.css' %}" rel='stylesheet' type='text/css' />
+		<!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript">
+			addEventListener("load", function() {
+				setTimeout(hideURLbar, 0);
+			}, false);
+			function hideURLbar() {
+				window.scrollTo(0, 1);
+			}
+		</script>
+		</script>
+		<!-- webfonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link rel="icon" type="image/x-icon" href="{% static 'robotronics/images/robo-fav.ico' %}">
+		<!--//webfonts -->
+	</head>
+	<body>
+		<div class="bg">
+			<div class="bg-tint">
 				<!-- start-header -->
-				<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+				<div id="home" class="header wow" data-wow-delay="0.4s">
 					<div class="top-header">
-						<div class="logo wow bounceInDown" data-wow-delay="0.4s">
+						<div class="logo wow" data-wow-delay="0.4s">
 							<a href="{% url 'index' %}"><img src="{% static 'robotronics/images/logo.png' %}" title="dreams" /></a>
 						</div>
 						<!-- start-top-nav -->
-						<nav class="top-nav wow bounceInDown" data-wow-delay="0.4s">
-							<span class="menu"> </span>
-							<ul class="top-nav">
-								<li class="active"><a href="{% url 'index' %}" class="scroll">Home</a></li>
-								<li><a href="{% url 'about' %}">About Us</a></li>
-								<li><a href="{% url 'project' %}">Projects</a></li>
-								<li><a href="{% url 'tutorial' %}">Tutorials</a></li>
-								<li><a href="{% url 'team' %}">Team</a></li>
-								<li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
-								<li><a href="{% url 'contacts' %}">Contact Us</a></li>
-							</ul>
+						<nav class="top-nav wow" data-wow-delay="0.4s">
+							<span class="menu">
+								<ul class="top-nav">
+									{% block navbar %}
+										<li class="active"><a href="{% url 'index' %}" class="scroll">Home</a></li>
+										<li><a href="{% url 'about' %}">About Us</a></li>
+										<li><a href="{% url 'project' %}">Projects</a></li>
+										<li><a href="{% url 'tutorial' %}">Tutorials</a></li>
+										<li><a href="{% url 'team' %}">Team</a></li>
+										<li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
+										<li><a href="{% url 'contacts' %}">Contact Us</a></li>
+									{% endblock %}
+								</ul>
+							</span>
 						</nav>
 						<script>
 							$("span.menu").click(function() {
@@ -75,53 +75,52 @@
 						<div class="clearfix"> </div>
 					</div>
 				</div>
-			<!-- banner -->
+				<!-- banner -->
+			</div>
 		</div>
-	</div>
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-grids">
-				<div class="col-md-3 footer-grid ftr-sec wow fadeInLeft" data-wow-delay="0.4s">
-					<h3>Navigation</h3>
-					<ul>
-						<li><a href="{% url 'index' %}">Home</a></li>
-						<li><a href="{% url 'about' %}">About Us</a></li>
-						<li><a href="{% url 'project' %}">Projects</a></li>
-						<li><a href="{% url 'tutorial' %}">Tutorials</a></li>
-						<li><a href="{% url 'team' %}">Team</a></li>
-						<li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"></div>
-				<div class="span10 offset1 wow fadeInUp" data-wow-delay = "0.4s">
-					<div class="social-icons">
+		
+		<!-- footer -->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-grids">
+					<div class="col-md-3 footer-grid ftr-sec wow fadeInLeft" data-wow-delay="0.4s">
+						<h3>Navigation</h3>
 						<ul>
-							<li><a href="https://www.facebook.com/groups/robotronix.iit.mandi/"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a href="http://youtube.com/"><i class="fab fa-youtube"></i></a></li>
-							<li><a href="http://github.com/"><i class="fab fa-github"></i></a></li>
+							<li><a href="{% url 'index' %}">Home</a></li>
+							<li><a href="{% url 'about' %}">About Us</a></li>
+							<li><a href="{% url 'project' %}">Projects</a></li>
+							<li><a href="{% url 'tutorial' %}">Tutorials</a></li>
+							<li><a href="{% url 'team' %}">Team</a></li>
+							<li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
 						</ul>
+					</div>
+					<div class="clearfix"></div>
+					<div class="span10 offset1 wow fadeInUp" data-wow-delay = "0.4s">
+						<div class="social-icons">
+							<ul>
+								<li><a href="https://www.facebook.com/groups/robotronix.iit.mandi/"><i class="fab fa-facebook-f"></i></a></li>
+								<li><a href="http://youtube.com/"><i class="fab fa-youtube"></i></a></li>
+								<li><a href="http://github.com/"><i class="fab fa-github"></i></a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<footer class="footer-bottom">
-		<div class="wow fadeInUp" data-wow-delay = "0.4s" style="text-align: center;">
-			<span style="color: grey;">
-				Developed by:
-				<a style="color: grey;" href="https://www.facebook.com/varunsingh110">Varun Singh</a>,
-				<a style="color: grey;" href="https://www.facebook.com/akshatmatrix">Akshat Malviya</a>,
-				<a style="color: grey;" href="https://www.facebook.com/rishis8">Rishi Sharma</a>,
-				<a style="color: grey;" href="https://www.facebook.com/vsvipul555">Vipul Sharma</a>.
-				Coordinated by:
-				<a style="color: grey;" href="https://www.facebook.com/virendrasingh.suryavanshi.1">Virendrasingh Suryavanshi</a>
-			</span>
-			<br>
-			<span style="color: grey;">&copy; Robotronics Club - <a style="color: grey;" href="https://www.iitmandi.ac.in/">IIT Mandi</a>. All Rights Reserved.</p></span>
-
-		</footer>
-	<!-- footer -->
-</body>
-
-</html>
+		<footer class="footer-bottom">
+			<div class="wow fadeInUp" data-wow-delay = "0.4s" style="text-align: center;">
+				<span style="color: grey;">
+					Developed by:
+					<a style="color: grey;" href="https://www.facebook.com/varunsingh110">Varun Singh</a>,
+					<a style="color: grey;" href="https://www.facebook.com/akshatmatrix">Akshat Malviya</a>,
+					<a style="color: grey;" href="https://www.facebook.com/rishis8">Rishi Sharma</a>,
+					<a style="color: grey;" href="https://www.facebook.com/vsvipul555">Vipul Sharma</a>.
+					Coordinated by:
+					<a style="color: grey;" href="https://www.facebook.com/virendrasingh.suryavanshi.1">Virendrasingh Suryavanshi</a>
+				</span>
+				<br>
+				<span style="color: grey;">&copy; Robotronics Club - <a style="color: grey;" href="https://www.iitmandi.ac.in/">IIT Mandi</a>. All Rights Reserved.</p></span>
+			</footer>
+			<!-- footer -->
+		</body>
+	</html>

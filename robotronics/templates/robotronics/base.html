@@ -4,7 +4,7 @@
 	<head>
 		<title>Robotronics Club - IIT Mandi</title>
 		<!-- favicon -->
-		<link rel="icon" type="image/png" href="{% static 'robotronics/robofav.ico' %}">
+		<link rel="icon" type="image/x-icon" href="{% static 'robotronics/images/robo-fav.ico' %}">
 		<!-- /favicon -->
 		<link href="{% static 'robotronics/css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -53,6 +53,7 @@
 										<li><a href="{% url 'project' %}">Projects</a></li>
 										<li><a href="{% url 'tutorial' %}">Tutorials</a></li>
 										<li><a href="{% url 'team' %}">Team</a></li>
+										<li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
 										<li><a href="{% url 'contacts' %}">Contact Us</a></li>
 									{% endblock %}
 								</ul>
@@ -72,8 +73,7 @@
 						{% block banner %}
 							<h1>ROBOTRONICS CLUB<br>IIT MANDI</h1>
 							<div class="clearfix"></div>
-							<p>Robotics + Electronics club of<br>Indian Institute of Technology, Mandi</p>
-							<div class="clearfix"> </div>
+							
 						{% endblock %}
 					</div>
 				</div>

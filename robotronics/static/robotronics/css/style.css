@@ -33,16 +33,18 @@ height: 100%;
 background-attachment: fixed;
 }
 .bgbase{
-background:url(../images/banner3.jpg) no-repeat 0px 0px;
+background:url(../images/smallbanner.jpg) no-repeat 0px 0px;
 background-size: cover;
 background-position: center;
 min-height:500px;
+height: 30%;
 }
 .bg-tint{
-background-color: RGBA(0, 0, 0, 0.60);
+background-color: rgba(0, 0, 0, 0.60);
 min-height: 500px;
-height: 100%;
+height: inherit;
 border-bottom: 2px solid #4059ce;
+margin: 0;
 }
 .header{
 background: #2f3837;
@@ -2570,6 +2572,8 @@ width: 69%;
 }
 
 @media (min-width: 576px) {
+
+
   .card-columns {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -2626,7 +2630,7 @@ width: 69%;
 
 .jumbotron h2{
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .text {
