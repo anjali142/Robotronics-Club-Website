@@ -59,6 +59,7 @@ font-weight: 200;
 text-transform: uppercase;
 font-size: 2.5em;
 }
+
 .logo a:hover{
 text-decoration:none;
 }
@@ -1181,7 +1182,7 @@ border: 1px solid #FD5331;
 /*----responsive-menu-start---*/
 @media(max-width:1280px){
 .bg {
-min-height: 435px;
+min-height: 400px;
 }
 .logo a img {
 background-size: 100%;
@@ -1191,7 +1192,7 @@ height: 55px;
 }
 .top-nav ul li a {
 padding: 0.5em 1.8em;
-font-size: 0.9em;
+font-size: 0.8em;
 }
 .banner h1 {
 font-size: 2.7em;
@@ -1307,7 +1308,7 @@ padding: 0px 0px 9px 0px;
 margin: 3px 0px 4px 0;
 }
 }
-@media (max-width: 768px){
+@media (max-width: 800px){
 .logo a img {
 background-size: 100%;
 }
@@ -1508,9 +1509,9 @@ margin-right: 0.7em;
 font-size: 0.875em;
 }
 }
-@media (max-width: 680px){
+@media (max-width: 715px){
 .logo {
-width: 18%;
+width: 25%;
 }
 .logo a img {
 width: 100%;
@@ -1520,7 +1521,7 @@ content: url(../images/nav.png);
 cursor: pointer;
 }
 .top-nav {
-width: 80%;
+width: 70%;
 float: right;
 }
 .top-nav  ul{
@@ -1797,7 +1798,10 @@ font-size: 0.70em;
 }
 @media (max-width: 480px){
 .logo {
-width: 20%;
+width: 40%;
+}
+.top-nav {
+	width: 60%;
 }
 .top-nav ul li a {
 font-size: 1em;
@@ -1980,13 +1984,13 @@ font-size:1.4em;
 }
 @media (max-width: 320px){
 .logo {
-width:21%;
+width:50%;
 }
 .header {
 height: 50px;
 }
 .top-nav {
-width: 77%;
+width: 50%;
 }
 .banner h1 {
 font-size: 1.1em;
