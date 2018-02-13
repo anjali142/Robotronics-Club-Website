@@ -13,8 +13,6 @@ transition:0.5s all;
 -ms-transition:0.5s all;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 4px;
 margin:0;
 }
 p{
@@ -50,8 +48,6 @@ padding:0;
 #theDiv {
 	display: none;
 	text-align: center;
-	height: 100%;
-	min-height: 500px; 
 }
 .animate-bottom {
   position: relative;

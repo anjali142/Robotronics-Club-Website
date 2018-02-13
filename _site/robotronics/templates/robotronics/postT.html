@@ -1,0 +1,45 @@
+{% extends 'robotronics/base.html' %}
+
+{% block navbar %}
+  <li><a href="{% url 'index' %}" class="scroll">Home</a></li>
+  <li><a href="{% url 'about' %}">About Us</a></li>
+  <li><a href="{% url 'project' %}">Projects</a></li>
+  <li class="active"><a href="{% url 'tutorial' %}">Tutorials</a></li>
+  <li><a href="{% url 'team' %}">Team</a></li>
+  <li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
+  <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+{% endblock %}
+
+{% block banner %}
+  <h1>ROBOTRONICS CLUB</h1>
+  <div class="clearfix"></div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <hr>
+      <h1 class="mt-4">{{ tut.Title }}</h1>
+      <hr>
+      <!-- Date/Time -->
+      <p><b>Posted on {{ tut.date }}</b></p>
+      <hr>
+      <hr>
+      <!-- Post Content -->
+      {{ tut.text }}
+      <hr>
+      <ul class="pager col-lg-12">
+        {% if previousp %}
+          <li class="previous"><a href="{% url 'tut' previousp.id %}">&larr; Previous</a></li>
+        {% endif %}
+        {% if nextp %}
+          <li class="next"><a href="{% url 'tut' nextp.id %}">Next &rarr;</a></li>
+        {% endif %}
+      </ul>
+      <hr>
+
+    </div>
+  </div>
+</div>
+{% endblock %}

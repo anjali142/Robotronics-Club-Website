@@ -1,0 +1,42 @@
+<!-- Tutorials Page -->
+{% extends 'robotronics/base.html' %}
+{% block navbar %}
+  <li><a href="{% url 'index' %}" class="scroll">Home</a></li>
+  <li><a href="{% url 'about' %}">About Us</a></li>
+  <li><a href="{% url 'project' %}">Projects</a></li>
+  <li class="active"><a href="{% url 'tutorial' %}">Tutorials</a></li>
+  <li><a href="{% url 'team' %}">Team</a></li>
+  <li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
+  <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+{% endblock %}
+
+{% block banner %}
+  <h1>ROBOTRONICS CLUB</h1>
+  <div class="clearfix"></div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="jumbotron">
+      <h2>Tutorials</h2>
+    </div>
+    
+    <div class="row">
+      <!-- Blog Post -->
+      {% for tut in list_tutorials %}
+        <div class="col-md-4 col-sm-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title">{{ tut.Title }}</h2>
+              <p class="card-text">{{ tut.desc }}...</p>
+              <a href="{% url 'proj' proj.id %}" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on {{ tut.date }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
