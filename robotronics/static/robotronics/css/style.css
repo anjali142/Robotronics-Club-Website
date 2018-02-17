@@ -14,8 +14,8 @@ transition:0.5s all;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 4px;
-margin:0;
+	letter-spacing: 3px;
+	margin:0;
 }
 p{
 margin:0;
@@ -26,7 +26,54 @@ padding:0;
 }
 /*----start-container----*/
 /*----preloader----*/
-#preloader {
+#preloader-wrapper { 
+    background: #fff; 
+    width: 100%; height: 100%; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#preloader-wrapper > #preloader { 
+    //background: transparent url('../images/preloader.gif') no-repeat center top;
+    position: absolute;
+    min-width: 414px; /* image-width of loader */
+    min-height: 414px; /* image-height of loader */
+    box-sizing: border-box;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 450px; /* 128px image-height of loader + 20px margin */
+    text-align: center;
+}
+#preloader-wrapper > #preloader > #preloader-img {
+	background: transparent url('../images/preloader.png') no-repeat center center;
+	position: absolute;
+	box-sizing: border-box;
+	min-width: 414px;
+	min-height: 414px;
+	top: 0;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	z-index: 1;
+}
+#preloader-wrapper > #preloader > #preloader-text {
+	text-align: center;
+	top: 80%;
+	font-size: 20px;
+}
+@-webkit-keyframes spin {
+  		0% { -webkit-transform: rotate(0deg); }
+  		100% { -webkit-transform: rotate(360deg); }
+}
+
+	@keyframes spin {
+ 		0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
+}
+/*#preloader img{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -36,7 +83,7 @@ padding:0;
 	-webkit-animation: spin 2s linear infinite;
 	animation: spin 2s linear infinite;
 	z-index: 1;
-}
+}*/
 	/* Safari */
 	@-webkit-keyframes spin {
   		0% { -webkit-transform: rotate(0deg); }
@@ -1889,6 +1936,12 @@ height: 19px;
 margin-top: 5px;
 font-size: 0.8em;
 height: 53px;
+}
+#preloader-wrapper {
+	display: none;
+}
+#theDiv {
+	display: block;
 }
 .recent-news h2 {
 font-size: 1.1em;

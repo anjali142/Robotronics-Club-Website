@@ -37,7 +37,15 @@
 	</head>
 	<body onload="uptownfunc()" style="margin: 0;">
 		
-		<div id="preloader"><img src="{% static 'robotronics/images/preloader.png' %}"></div>
+		<div id="preloader-wrapper">
+			<div id="preloader">
+				<div id="preloader-img"></div>
+				<br>
+				<div id="preloader-text">
+					&nbsp;<span id="motto"></span><span id="cursor"> </span>
+				</div>
+			</div>
+		</div>
 		<div id="theDiv" class="animate-bottom">
 			<div class="bg">
 				<div class="bg-tint">
