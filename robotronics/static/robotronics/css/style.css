@@ -13,6 +13,8 @@ transition:0.5s all;
 -ms-transition:0.5s all;
 }
 h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 4px;
 margin:0;
 }
 p{
@@ -23,6 +25,51 @@ margin:0;
 padding:0;
 }
 /*----start-container----*/
+/*----preloader----*/
+#preloader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 414px;
+	height: 414px;
+	margin: -15% 0 0 -17%;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	z-index: 1;
+}
+	/* Safari */
+	@-webkit-keyframes spin {
+  		0% { -webkit-transform: rotate(0deg); }
+  		100% { -webkit-transform: rotate(360deg); }
+}
+
+	@keyframes spin {
+ 		0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
+}
+#theDiv {
+	display: none;
+	text-align: center;
+	height: 100%;
+	min-height: 500px; 
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
 /*-----start-header----*/
 .bg{
 background:url(../images/banner3.jpg) no-repeat 0px 0px;
@@ -42,7 +89,7 @@ height: 30%;
 .bg-tint{
 background-color: rgba(0, 0, 0, 0.60);
 min-height: 500px;
-height: inherit;
+height: 100%;
 border-bottom: 2px solid #4059ce;
 margin: 0;
 }
