@@ -25,8 +25,8 @@ import os
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '=1z((hac3636e!4^jmm+b3i1ra6i%s^66azt35ehm5zf1b038r')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+#DEBUG = False
 
 ALLOWED_HOSTS = ['robotronics.herokuapp.com', '*']
 

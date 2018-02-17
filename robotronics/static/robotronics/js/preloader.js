@@ -42,6 +42,6 @@ function erase() {
 function typeNerase() {
   mottoPrint.html(motto.substr(0, mottoLength++));
   if (mottoLength >= motto.length + 1) {
-    erase();
+    //erase();
   }
 }
