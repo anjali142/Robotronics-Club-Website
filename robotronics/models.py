@@ -34,3 +34,6 @@ class Tutorial(models.Model):
 
     def __str__(self):
         return self.Title
+
+    def desc(self):
+        return self.text[:75]
