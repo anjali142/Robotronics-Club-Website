@@ -10,17 +10,12 @@
   <li><a href="{% url 'contacts' %}">Contact Us</a></li>
 {% endblock %}
 
-{% block banner %}
-  <h1>ROBOTRONICS CLUB</h1>
-  <div class="clearfix"></div>
-{% endblock %}
-
 {% block content %}
   <div class="container">
     <div class="jumbotron">
       <h2>Tutorials</h2>
     </div>
-    
+
     <div class="row">
       <!-- Blog Post -->
       {% for tut in list_tutorials %}
