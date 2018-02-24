@@ -26,16 +26,16 @@ padding:0;
 }
 /*----start-container----*/
 /*----preloader----*/
-#preloader-wrapper { 
-    background: #fff; 
-    width: 100%; height: 100%; 
-    position: fixed; 
+#preloader-wrapper {
+    background: #fff;
+    width: 100%; height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 10;
 }
 
-#preloader-wrapper > #preloader { 
+#preloader-wrapper > #preloader {
     position: absolute;
     min-width: 414px; /* image-width of loader */
     min-height: 414px; /* image-height of loader */
@@ -99,7 +99,7 @@ padding:0;
 	display: none;
 	text-align: center;
 	height: 100%;
-	min-height: 500px; 
+	min-height: 500px;
 }
 .animate-bottom {
   position: relative;
@@ -110,12 +110,12 @@ padding:0;
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
+  from { bottom:-100px; opacity:0 }
   to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
 /*-----start-header----*/
@@ -1207,7 +1207,6 @@ text-shadow: 0 1px 0 #ffffff;
 color: #242424;
 }
 .map{
-margin: 6% 0 4%;
 }
 .contact_right h3{
 margin-bottom: 2%;
@@ -1874,7 +1873,6 @@ margin-right: 0%;
 width: 100%;
 }
 .map {
-margin: 3% 0;
 }
 .contact_right {
 width: 100%;
@@ -2748,7 +2746,7 @@ width: 69%;
 
 .map {
     //min-width: 300px; /* Fixes issue #2, problem with width of map.*/
-    min-height: 300px;
+    min-height: 500px;
     width: 100%;
     height: 100%;
 }
@@ -2807,4 +2805,8 @@ width: 69%;
 .social-icons a:active {
 	transition: none;
   color: #4059ce;
+}
+
+.mapdiv {
+	padding-top: 2em;
 }

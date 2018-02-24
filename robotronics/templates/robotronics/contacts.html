@@ -17,9 +17,19 @@
 {% endblock %}
 
 {% block content %}
+  <div class="container-fluid">
+      <div class="mapdiv">
+          <div class="panel panel-default">
+              <div class="text-center headera">Location</div>
+              <div class="panel-body text-center">
+                  <div id="map1" class="map">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
   <div class="container">
       <div class="row contactrow">
-          <div class="col-md-6">
               <div class="well well-sm">
                   <form class="form-horizontal" method="post">
                     {% csrf_token %}
@@ -52,26 +62,6 @@
                           </div>
                       </fieldset>
                   </form>
-              </div>
-          </div>
-          <div class="col-md-6">
-              <div>
-                  <div class="panel panel-default">
-                      <div class="text-center headera">Location</div>
-                      <div class="panel-body text-center">
-                          <h3>Address</h3>
-                          <div>
-                            Kamand Campus, VPO Kamand
-                            Distt. Mandi - 175005
-                            Himachal Pradesh
-                            India
-                          </div>
-                          <hr />
-                          <div id="map1" class="map">
-                          </div>
-                      </div>
-                  </div>
-              </div>
           </div>
       </div>
   </div>
