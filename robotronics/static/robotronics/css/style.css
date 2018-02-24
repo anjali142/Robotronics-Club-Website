@@ -1,7 +1,7 @@
 html, body{
 font-family: 'Open Sans', sans-serif;
 font-size: 100%;
-background: #FFf;
+
 -webkit-font-smoothing: antialiased;
 height: 100%;
 }
@@ -63,7 +63,7 @@ padding:0;
 #preloader-wrapper > #preloader > #preloader-text {
 	text-align: center;
 	top: 80%;
-	font-size: 20px;
+	font-size: 30px;
 }
 @-webkit-keyframes spin {
   		0% { -webkit-transform: rotate(0deg); }
@@ -74,17 +74,7 @@ padding:0;
  		0% { transform: rotate(0deg); }
   		100% { transform: rotate(360deg); }
 }
-/*#preloader img{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 414px;
-	height: 414px;
-	margin: -15% 0 0 -17%;
-	-webkit-animation: spin 2s linear infinite;
-	animation: spin 2s linear infinite;
-	z-index: 1;
-}*/
+
 	/* Safari */
 	@-webkit-keyframes spin {
   		0% { -webkit-transform: rotate(0deg); }
@@ -127,10 +117,69 @@ min-height:500px;
 height: 100%;
 background-attachment: fixed;
 }
+
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -999;
+}.crossfade > figure:nth-child(1) { 
+  background-image: url('../images/banner1.jpg'); }
+
+.crossfade > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('../images/banner2.jpg');
+}
+
+.crossfade > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('../images/banner3.jpg');
+}
+
+.crossfade > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('../images/banner1.jpg');
+}
+
+.crossfade > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('../images/banner2.jpg');
+}
+
+/*Create the crossfade effect using CSS3 animations.*/
+
+@keyframes 
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+
 .bgbase{
 background:url(../images/smallbanner.jpg) no-repeat 0px 0px;
 background-size: cover;
-background-position: center;
+background-position: 50% 80%;
 min-height:500px;
 height: 30%;
 }
@@ -142,11 +191,13 @@ border-bottom: 2px solid #4059ce;
 margin: 0;
 }
 .header{
-background: #2f3837;
+/*background: #2f3837;*/
 height: 72px;
 }
 .logo{
 float: left;
+margin-left: 2%;
+margin-top: 1%;
 }
 .logo a{
 color: #303030;
@@ -164,6 +215,9 @@ display:none;
 /*----navbar-nav----*/
 .top-header{
 }
+.top-nav {
+	width: 100%;
+}
 .top-nav ul li a{
 color: #FFF;
 padding: 1em 1.8em;
@@ -177,7 +231,7 @@ font-weight: 300;
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
 color:#FFF;
-background-color: #4059ce;
+background-color: rgba(64, 89, 206, 0.40);
 }
 .logo a{
 display:block;
@@ -201,7 +255,7 @@ float: right;
 }
 nav li {
 display: inline;
-float: left;
+float: right;
 position:relative;
 }
 nav a {
@@ -1278,8 +1332,11 @@ border: 1px solid #FD5331;
 .bg {
 min-height: 400px;
 }
+.logo {
+	width: 20%;
+}
 .logo a img {
-background-size: 100%;
+background-size: 70%;
 }
 .header {
 height: 55px;
@@ -1403,9 +1460,13 @@ margin: 3px 0px 4px 0;
 }
 }
 @media (max-width: 800px){
+.logo {
+	width: 15%;
+}
 .logo a img {
 background-size: 100%;
 }
+
 .top-nav ul li a {
 padding: 0.5em 0.35em;
 font-size: 0.8em;
@@ -1605,10 +1666,10 @@ font-size: 0.875em;
 }
 @media (max-width: 715px){
 .logo {
-width: 25%;
+width: 22%;
 }
 .logo a img {
-width: 100%;
+width: 70%;
 }
 span.menu:before {
 content: url(../images/nav.png);
@@ -1891,7 +1952,7 @@ font-size: 0.70em;
 }
 @media (max-width: 480px){
 .logo {
-width: 40%;
+width: 35%;
 }
 .top-nav {
 	width: 60%;
@@ -2083,13 +2144,13 @@ font-size:1.4em;
 }
 @media (max-width: 320px){
 .logo {
-width:50%;
+width: 55%;
 }
 .header {
 height: 50px;
 }
 .top-nav {
-width: 50%;
+width: 40%;
 }
 .banner h1 {
 font-size: 1.1em;

@@ -3,13 +3,13 @@
 {% load static %}
 
 {% block navbar %}
-  <li><a href="{% url 'index' %}" class="scroll">Home</a></li>
-  <li><a href="{% url 'about' %}">About Us</a></li>
-  <li class="active"><a href="{% url 'project' %}">Projects</a></li>
-  <li><a href="{% url 'tutorial' %}">Tutorials</a></li>
-  <li><a href="{% url 'team' %}">Team</a></li>
-  <li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
   <li><a href="{% url 'contacts' %}">Contact Us</a></li>
+  <li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
+  <li><a href="{% url 'team' %}">Team</a></li>
+  <li><a href="{% url 'tutorial' %}">Tutorials</a></li>
+  <li class="active"><a href="{% url 'project' %}">Projects</a></li>
+  <li><a href="{% url 'about' %}">About Us</a></li>
+  <li><a href="{% url 'index' %}" class="scroll">Home</a></li>
 {% endblock %}
 
 {% block content %}
