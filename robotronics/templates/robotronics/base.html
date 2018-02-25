@@ -41,21 +41,21 @@
 				<!-- start-header -->
 				<div id="home" class="header wow" data-wow-delay="0.4s">
 					<div class="top-header">
-						<nav class="top-nav wow" data-wow-delay="0.4s">
-							<span class="menu">
-								<ul class="top-nav">
 						<div class="logo wow" data-wow-delay="0.4s">
 							<a href="{% url 'index' %}"><img style="max-width: 250px;" src="{% static 'robotronics/images/robologo.png' %}" title="Robotronics Club" /></a>
 						</div>
+						<nav class="top-nav wow" data-wow-delay="0.4s">
+							<span class="menu">
+								<ul class="top-nav">
 						<!-- start-top-nav -->
 									{% block navbar %}
-										<li class="active"><a href="{% url 'index' %}" class="scroll">Home</a></li>
-										<li><a href="{% url 'about' %}">About Us</a></li>
-										<li><a href="{% url 'project' %}">Projects</a></li>
-										<li><a href="{% url 'tutorial' %}">Tutorials</a></li>
-										<li><a href="{% url 'team' %}">Team</a></li>
-										<li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
 										<li><a href="{% url 'contacts' %}">Contact Us</a></li>
+										<li><a href="http://sntc.iitmandi.ac.in/inv_man">Resources</a></li>
+										<li><a href="{% url 'team' %}">Team</a></li>
+										<li><a href="{% url 'tutorial' %}">Tutorials</a></li>
+										<li><a href="{% url 'project' %}">Projects</a></li>
+										<li><a href="{% url 'about' %}">About Us</a></li>
+										<li class="active"><a href="{% url 'index' %}" class="scroll">Home</a></li>
 									{% endblock %}
 								</ul>
 							</span>
@@ -112,7 +112,7 @@
 			<div style="text-align: center;">
 				<span style="color: grey;">
 					Developed by:
-					<a style="color: grey;" href="https://www.facebook.com/akshatmatrix">Akshat Malviya</a>,
+					<a style="color: grey;" href="https://www.facebook.com/akshatmatrix">Akshat Malviya</a>, <!-- :D -->
 					<a style="color: grey;" href="https://www.facebook.com/varunsingh110">Varun Singh</a>,
 					<a style="color: grey;" href="https://www.facebook.com/rishis8">Rishi Sharma</a>,
 					<a style="color: grey;" href="https://www.facebook.com/vsvipul555">Vipul Sharma</a>.

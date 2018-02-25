@@ -122,7 +122,7 @@ background-attachment: fixed;
   animation: imageAnimation 30s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
-  background-attachment: fixed;
+ // background-attachment: fixed;
   background-position: center center;
   color: transparent;
   height: 100%;
@@ -215,9 +215,8 @@ display:none;
 }
 /*----navbar-nav----*/
 .top-header{
-}
-.top-nav {
 	width: 100%;
+	position: absolute;
 }
 .top-nav ul li a{
 color: #FFF;
@@ -253,10 +252,14 @@ float: right;
 nav ul {
 padding: 0;
 float: right;
+transform: rotate(180deg);
+}
+nav ul > li {
+	transform: 	rotate(-180deg);
 }
 nav li {
 display: inline;
-float: right;
+float: left;
 position:relative;
 }
 nav a {
@@ -1694,23 +1697,23 @@ font-size: 14px;
 width: 100%;
 }
 span.menu{
-display:block;
-float:right;
-margin: 11px 8px;
+display: block;
+float: right;
+margin: 11px 11px;
 }
 .top-nav  ul{
 margin: 0;
-z-index: 999;
+z-index: 50;
 position: absolute;
-width: 96%;
-background: rgba(10, 30, 110, 0.95);
+width: 100%;
+background: rgba(10, 30, 110, 0.80);
 text-align: center;
 top: 76%;
-left: 0%;
+right: 0%;
 }
 .top-nav ul li.active a, .top-nav ul li a:hover {
 color: #FFF;
-background-color: #444444;
+background-color: rgba(f, f, f, 0.80);
 }
 .header {
 height: 50px;
@@ -1963,7 +1966,7 @@ font-size: 1em;
 padding:0;
 }
 .top-nav ul {
-background: rgba(10, 30, 110, 0.95);
+background: rgba(10, 30, 110, 0.80);
 top: 77%;
 }
 nav a {

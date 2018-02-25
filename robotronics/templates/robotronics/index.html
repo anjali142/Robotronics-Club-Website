@@ -59,12 +59,12 @@
 					<!-- start-header -->
 					<div id="home" class="header wow" data-wow-delay="0.4s">
 						<div class="top-header">
-							<nav class="top-nav wow" data-wow-delay="0.4s">
-								<span class="menu">
-									<ul class="top-nav">
 							<div class="logo wow" data-wow-delay="0.4s">
 								<a href="{% url 'index' %}"><img style="max-width: 250px;" src="{% static 'robotronics/images/robologo.png' %}" title="Robotronics Club" /></a>
 							</div>
+							<nav class="top-nav wow" data-wow-delay="0.4s">
+								<span class="menu">
+									<ul class="top-nav">
 							<!-- start-top-nav -->
 										{% block navbar %}
 											<li><a href="{% url 'contacts' %}">Contact Us</a></li>
