@@ -122,6 +122,7 @@ background-attachment: fixed;
   animation: imageAnimation 30s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
   color: transparent;
   height: 100%;
