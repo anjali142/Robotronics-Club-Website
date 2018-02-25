@@ -37,7 +37,7 @@ padding:0;
 
 #preloader-wrapper > #preloader {
     position: absolute;
-    min-width: 414px; /* image-width of loader */
+    min-width: 600px; /* image-width of loader */
     min-height: 414px; /* image-height of loader */
     box-sizing: border-box;
 
@@ -49,10 +49,10 @@ padding:0;
 }
 #preloader-wrapper > #preloader > #preloader-img {
 	background: transparent url('../images/preloader.png') no-repeat center center;
-	background-size: 50% auto;
+	background-size: 36% auto;
 	position: absolute;
 	box-sizing: border-box;
-	min-width: 414px;
+	min-width: 600px;
 	min-height: 414px;
 	height: auto;
 	top: 0;
