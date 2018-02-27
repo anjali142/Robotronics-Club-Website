@@ -154,6 +154,11 @@ background-attachment: fixed;
   animation-delay: 24s;
   background-image: url('../images/b5.jpg');
 }
+.crossfade > figure:nth-child(6) {
+  animation-delay: 24s;
+  background-image: url('../images/b6.jpg');
+}
+
 
 /*Create the crossfade effect using CSS3 animations.*/
 
