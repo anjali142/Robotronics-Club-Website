@@ -1674,6 +1674,13 @@ font-size: 0.875em;
 }
 }
 @media (max-width: 715px){
+		#preloader-wrapper > #preloader > #preloader-text {
+	text-align: center;
+	top: 80%;
+	font-size: 20px;
+}
+
+
 .logo {
 width: 22%;
 }
@@ -2745,7 +2752,6 @@ width: 69%;
 }
 
 @media (min-width: 576px) {
-
 
   .card-columns {
     -webkit-column-count: 3;
