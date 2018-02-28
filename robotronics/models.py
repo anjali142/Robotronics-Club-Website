@@ -6,7 +6,8 @@ class Member(models.Model):
     Coord = 'Coord'
     Team = 'Team'
     Team16 = 'Team16'
-    CHOICES = ((Coord16, 'Coord16'), (Coord, 'Coord'), (Team, 'Team'), (Team16, 'Team16'))
+    Webdev = 'Webdev'
+    CHOICES = ((Coord16, 'Coord16'), (Coord, 'Coord'), (Team, 'Team'), (Team16, 'Team16'), (Webdev, 'Webdev'))
     role = models.CharField(max_length=20, choices=CHOICES, default=Team)
     name = models.CharField(max_length=200)
     facebook = models.CharField(max_length=500, null=True)

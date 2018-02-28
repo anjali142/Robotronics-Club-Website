@@ -160,4 +160,40 @@
       </div>
     </div>
   </div>
+  <div id="teambody">
+    <div class="container">
+      <div class="row">
+        <div class="heading-title text-center">
+          <h3 class="text-uppercase">Web Developers</h3>
+        </div>
+        {% if webdev %}
+          {% for mem in webdev %}
+            <div class="col-md-4 col-sm-4">
+              <div class="team-member">
+                <div class="team-img">
+                  <img src="/static/robotronics/team/{{mem.name}}.jpg" alt="team member" class="img-responsive">
+                </div>
+                <div class="team-hover">
+                  <div class="desk">
+                    <p>{{mem.details}}</p>
+                  </div>
+                  <div class="s-link">
+                    <a href="{{mem.facebook}}"><i class="icon-facebook"></i></a>
+                    <a href="{{mem.email}}"><i class="icon-mail-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-title">
+                <h5>{{mem.name}}</h5>
+              </div>
+            </div>
+          {% endfor %}
+        {% else %}
+          <div>
+            <h4>NO ONE</h4>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 {% endblock %}

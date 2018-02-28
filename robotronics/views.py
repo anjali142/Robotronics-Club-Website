@@ -15,11 +15,13 @@ def team(request):
     coord = Member.objects.filter(role='Coord')
     team = Member.objects.filter(role='Team')
     team16 = Member.objects.filter(role='Team16')
+    webdev = Member.objects.filter(role='Webdev')
     return render(request, 'robotronics/team.html', {
         'coord16': coord16,
         'coord': coord,
         'team': team,
         'team16': team16,
+        'webdev': webdev,
     })
 
 def tutorial(request):
