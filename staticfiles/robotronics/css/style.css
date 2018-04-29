@@ -132,7 +132,7 @@ background-attachment: fixed;
   top: 0px;
   width: 100%;
   z-index: -999;
-}.crossfade > figure:nth-child(1) { 
+}.crossfade > figure:nth-child(1) {
   background-image: url('../images/b1.jpg'); }
 
 .crossfade > figure:nth-child(2) {
@@ -162,7 +162,7 @@ background-attachment: fixed;
 
 /*Create the crossfade effect using CSS3 animations.*/
 
-@keyframes 
+@keyframes
 imageAnimation {  0% {
  animation-timing-function: ease-in;
  opacity: 0;
@@ -2813,7 +2813,8 @@ width: 69%;
 }
 
 .text {
-  margin-bottom: 5em;
+	font-size: 130%;
+  margin-bottom: 2em;
 }
 
 .contactrow {
@@ -2885,4 +2886,12 @@ width: 69%;
 
 .mapdiv {
 	padding-top: 2em;
+}
+
+.xnew {
+	padding-bottom: 5px;
+}
+
+.xnew h2 {
+	font-size: 44px;
 }

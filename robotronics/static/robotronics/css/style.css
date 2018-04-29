@@ -2813,6 +2813,7 @@ width: 69%;
 }
 
 .text {
+	font-size: 130%;
   margin-bottom: 2em;
 }
 
@@ -2889,4 +2890,8 @@ width: 69%;
 
 .xnew {
 	padding-bottom: 5px;
+}
+
+.xnew h2 {
+	font-size: 44px;
 }
