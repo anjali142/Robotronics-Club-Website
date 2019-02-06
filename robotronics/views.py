@@ -16,6 +16,7 @@ def team(request):
     team = Member.objects.filter(role='Team')
     team16 = Member.objects.filter(role='Team16')
     webdev = Member.objects.filter(role='Webdev')
+    Member.link = property(lambda self: ''.join(self.name.split()))
     return render(request, 'robotronics/team.html', {
         'coord16': coord16,
         'coord': coord,
