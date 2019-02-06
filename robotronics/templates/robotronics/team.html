@@ -1,5 +1,6 @@
 <!-- Team Page -->
 {% extends 'robotronics/base.html' %}
+{% load static %}
 
 {% block navbar %}
   <li><a href="{% url 'contacts' %}">Contact Us</a></li>
@@ -27,7 +28,7 @@
             <div class="col-md-4 col-sm-4">
               <div class="team-member">
                 <div class="team-img">
-                  <img src="/static/robotronics/team/{{mem.name}}.jpg" alt="team member" class="img-responsive">
+                  <img src="{% static 'robotronics/team/' %}{{mem.name}}.jpg" alt="team member" class="img-responsive">
                 </div>
                 <div class="team-hover">
                   <div class="desk">
@@ -64,7 +65,7 @@
             <div class="col-md-4 col-sm-4">
               <div class="team-member">
                 <div class="team-img">
-                  <img src="/static/robotronics/team/{{mem.name}}.jpg" alt="team member" class="img-responsive">
+                  <img src="{% static 'robotronics/team/' %}{{mem.name}}.jpg" alt="team member" class="img-responsive">
                 </div>
                 <div class="team-hover">
                   <div class="desk">
@@ -101,7 +102,7 @@
             <div class="col-md-4 col-sm-4">
               <div class="team-member">
                 <div class="team-img">
-                  <img src="/static/robotronics/team/{{mem.name}}.jpg" alt="team member" class="img-responsive">
+                  <img src="{% static 'robotronics/team/' %}{{mem.name}}.jpg" alt="team member" class="img-responsive">
                 </div>
                 <div class="team-hover">
                   <div class="desk">
@@ -138,7 +139,7 @@
             <div class="col-md-4 col-sm-4">
               <div class="team-member">
                 <div class="team-img">
-                  <img src="/static/robotronics/team/{{mem.name}}.jpg" alt="team member" class="img-responsive">
+                  <img src="{% static 'robotronics/team/' %}{{mem.name}}.jpg" alt="team member" class="img-responsive">
                 </div>
                 <div class="team-hover">
                   <div class="desk">
@@ -175,7 +176,7 @@
             <div class="col-md-4 col-sm-4">
               <div class="team-member">
                 <div class="team-img">
-                  <img src="/static/robotronics/team/{{mem.name}}.jpg" alt="team member" class="img-responsive">
+                  <img src="{% static 'robotronics/team/' %}{{mem.name}}.jpg" alt="team member" class="img-responsive">
                 </div>
                 <div class="team-hover">
                   <div class="desk">
