@@ -21,7 +21,7 @@
 
       <div class="row">
         <div class="heading-title text-center">
-          <h3 class="text-uppercase">Coordinators</h3>
+          <h3 class="text-uppercase">Coordinators'18</h3>
         </div>
         {% if coord %}
           {% for mem in coord %}
@@ -58,7 +58,7 @@
     <div class="container">
       <div class="row">
         <div class="heading-title text-center">
-          <h3 class="text-uppercase">Core Team</h3>
+          <h3 class="text-uppercase">Coordinators'17</h3>
         </div>
         {% if team %}
           {% for mem in team %}
@@ -91,80 +91,7 @@
       </div>
     </div>
   </div>
-  <div id="teambody">
-    <div class="container">
-      <div class="row">
-        <div class="heading-title text-center">
-          <h3 class="text-uppercase">Coordinators '16</h3>
-        </div>
-        {% if coord16 %}
-          {% for mem in coord16 %}
-            <div class="col-md-4 col-sm-4">
-              <div class="team-member">
-                <div class="team-img">
-                  <img src="{% static 'robotronics/team/' %}{{mem.link}}.jpg" alt="team member" class="img-responsive">
-                </div>
-                <div class="team-hover">
-                  <div class="desk">
-                    <p>{{mem.details}}</p>
-                  </div>
-                  <div class="s-link">
-                    <a href="{{mem.facebook}}"><i class="icon-facebook"></i></a>
-                    <a href="{{mem.linkedin}}"><i class="icon-linkedin"></i></a>
-                    <a href="{{mem.github}}"><i class="icon-github-circled"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-title">
-                <h5>{{mem.name}}</h5>
-              </div>
-            </div>
-          {% endfor %}
-        {% else %}
-          <div>
-            <h4>NO ONE</h4>
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-  <div id="teambody">
-    <div class="container">
-      <div class="row">
-        <div class="heading-title text-center">
-          <h3 class="text-uppercase">Core Team '16</h3>
-        </div>
-        {% if team16 %}
-          {% for mem in team16 %}
-            <div class="col-md-4 col-sm-4">
-              <div class="team-member">
-                <div class="team-img">
-                  <img src="{% static 'robotronics/team/' %}{{mem.link}}.jpg" alt="team member" class="img-responsive">
-                </div>
-                <div class="team-hover">
-                  <div class="desk">
-                    <p>{{mem.details}}</p>
-                  </div>
-                  <div class="s-link">
-                    <a href="{{mem.facebook}}"><i class="icon-facebook"></i></a>
-                    <a href="{{mem.linkedin}}"><i class="icon-linkedin"></i></a>
-                    <a href="{{mem.github}}"><i class="icon-github-circled"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="team-title">
-                <h5>{{mem.name}}</h5>
-              </div>
-            </div>
-          {% endfor %}
-        {% else %}
-          <div>
-            <h4>NO ONE</h4>
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
+  
   <div id="teambody">
     <div class="container">
       <div class="row">
